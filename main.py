@@ -1,3 +1,11 @@
+install pip
+install pandas==1.5.1
+install joblib==1.2.0
+install python-time
+install streamlit
+install scikit-learn==1.1.3
+install streamlit-modal
+
 #import libary 
 import streamlit as st
 import metode
