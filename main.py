@@ -56,9 +56,9 @@ if home==False and about==False or home==True and about==False:
         nama = st.text_input("Provinsi",placeholder='Nama')
     with col2:
         umur = st.number_input("Kabupaten",max_value=100)
-    jk = st.selectbox("Jenis Kelamin",('Laki-laki','Perempuan'))
-    col3,col4 = st.columns(2)
-    with col3:
+ #   jk = st.selectbox("Jenis Kelamin",('Laki-laki','Perempuan'))
+#    col3,col4 = st.columns(2)
+#    with col3:
         bp = st.number_input("Pintu Air",min_value=0,max_value=1000)
     with col4:
         chol = st.number_input("Tinggi Air",min_value=0,max_value=1000)
