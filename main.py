@@ -1,6 +1,6 @@
 #import libary 
 import streamlit as st
-import metode
+#import metode
 import time
 
 
