@@ -7,7 +7,7 @@ import time
 # pige title
 st.set_page_config(
     page_title="Prediksi Banjir",
-    page_icon="https://e7.pngegg.com/pngimages/594/747/png-clipart-heart-heart-cartoon-heart.png",
+    page_icon="https://www.pngwing.com/id/free-png-boyxw",
 )
 
     # 0 = Tidak Banjir
