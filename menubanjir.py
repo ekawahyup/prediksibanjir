@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.title("Aplikasi Prediksi Banjir")
-st.hidder("Kelompok 8 Tugas Datascience PJJ AMIKOM")
+st.header("Kelompok 8 Tugas Datascience PJJ AMIKOM")
 
 
 st.write("""
