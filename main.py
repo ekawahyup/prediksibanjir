@@ -39,7 +39,7 @@ about = kolom[2].button('About')
 
 # home page
 if home==False and about==False or home==True and about==False:
-    st.markdown("<h1 style='text-align: center; color: white; margin:0 ; padding:0;'>Prediksi Penyakit Jantung</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: white; margin:0 ; padding:0;'>Prediksi Banjir</h1>", unsafe_allow_html=True)
     # setting kolom
     with st.expander("Setting"):
 
@@ -47,21 +47,21 @@ if home==False and about==False or home==True and about==False:
         st.markdown("""---""")
         st.write("""Metode Klasfikasi""")
 
-        model_1 = st.checkbox('K-Nearest Neighbors (K=11) ', value=True)
-        model_2 = st.checkbox('Bagging Clasifier (Gaussian) ')
-        model_3 = st.checkbox('Random Forest')
+        model_1 = st.checkbox('Neural Network(K=11) ', value=True)
+        model_2 = st.checkbox('Random Forest ')
+        model_3 = st.checkbox('LSTM + Neural Network')
 
     col1, col2 = st.columns(2)
     with col1:
-        nama = st.text_input("Masukkan Nama",placeholder='Nama')
+        nama = st.text_input("Provinsi",placeholder='Nama')
     with col2:
-        umur = st.number_input("Masukkan Umur",max_value=100)
+        umur = st.number_input("Kabupaten",max_value=100)
     jk = st.selectbox("Jenis Kelamin",('Laki-laki','Perempuan'))
     col3,col4 = st.columns(2)
     with col3:
-        bp = st.number_input("Tekanan Darah",min_value=0,max_value=1000)
+        bp = st.number_input("Pintu Air",min_value=0,max_value=1000)
     with col4:
-        chol = st.number_input("Kadar Kolesterol",min_value=0,max_value=1000)
+        chol = st.number_input("Tinggi Air",min_value=0,max_value=1000)
     #    Centering Butoon 
     columns = st.columns((2, 0.6, 2))
     sumbit = columns[1].button("Submit")
