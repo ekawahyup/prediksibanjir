@@ -1,4 +1,3 @@
-install pip
 install pandas==1.5.1
 install joblib==1.2.0
 install python-time
