@@ -1,4 +1,4 @@
- import libary 
+#import libary 
 import streamlit as st
 import metode
 import time
